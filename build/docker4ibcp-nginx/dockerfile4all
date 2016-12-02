@@ -1,0 +1,74 @@
+# ibcp全模块镜像
+# 基于nginx镜像的ibcp镜像
+# OS：debian:jessie
+FROM avatech/nginx:1.11.6
+
+# 作者
+MAINTAINER John.Chen "john.chen@avatech.com.cn"
+
+# 定义参数 
+# 程序包-发布服务地址
+ARG IBCP_PACKAGE_URL=http://ibas.club:8866/ibcp
+# 程序包-发布服务用户名
+ARG IBCP_PACKAGE_USER=avatech/\amber
+# 程序包-发布服务用户密码
+ARG IBCP_PACKAGE_PASSWORD=Aa123456
+# 程序包-版本路径
+ARG IBCP_PACKAGE_VERSION=latest
+# 程序包-下载目录
+ARG IBCP_PACKAGE_DOWNLOAD=./ibcp_packages
+# 程序包-工具目录
+ARG IBCP_PACKAGE_TOOLS=./ibcp_tools
+
+# 定义环境变量
+ENV \
+# ibcp目录
+    IBCP_HOME=/srv/ibcp \
+# nginx目录
+    NGINX_HOME=/usr/share/nginx
+
+# 创建数据文件夹
+RUN mkdir -p "${IBCP_PACKAGE_DOWNLOAD}"; \
+    mkdir -p "${IBCP_PACKAGE_TOOLS}"; \
+    mkdir -p "${NGINX_HOME}/webapps";
+
+# 部署ibcp程序
+RUN set -x \
+# 下载ibcp的最新war包
+    && wget -r -np -nd -nv -P ${IBCP_PACKAGE_DOWNLOAD} --http-user=${IBCP_PACKAGE_USER} --http-password=${IBCP_PACKAGE_PASSWORD} ${IBCP_PACKAGE_URL}/${IBCP_PACKAGE_VERSION}/ \
+# 排序ibcp.deploy.order.txt，此文件为部署顺序说明。
+    && if [ ! -e "${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt" ]; then \
+          ls -l "${IBCP_PACKAGE_DOWNLOAD}/*.war" | awk '//{print $NF}' >>"${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt"; \
+       fi \
+# 释放war包
+    && (while read file; \
+       do \
+         file=${file%%.war*}.war; \
+         echo 释放"${IBCP_PACKAGE_DOWNLOAD}/${file}"; \
+# 修正war包的解压目录
+         folder=${file##*ibcp.}; \
+         folder=${folder%%.service*}; \
+# 记录释放的目录到ibcp.release.txt
+         if [ ! -e "${NGINX_HOME}/webapps/ibcp.release.txt" ]; then :>"${NGINX_HOME}/webapps/ibcp.release.txt"; fi; \
+         grep -q ${folder} "${DEPLOY_FOLDER}/webapps/ibcp.release.txt" || echo "${folder}" >>"${NGINX_HOME}/webapps/ibcp.release.txt"; \
+# 解压war包到tomcat目录，WEB-INF*表示仅解压此目录
+#        unzip -o "${IBCP_PACKAGE_DOWNLOAD}/${file}" WEB-INF* -d "${NGINX_HOME}/webapps/${folder}"; \
+         unzip -o "${IBCP_PACKAGE_DOWNLOAD}/${file}" -d "${NGINX_HOME}/webapps/${folder}"; \
+# 删除配置文件
+         if [ -e "${NGINX_HOME}/webapps/${folder}/WEB-INF/app.xml" ]; then \
+           rm -f "${NGINX_HOME}/webapps/${folder}/WEB-INF/app.xml"; \
+         fi; \
+# 删除服务路由文件
+         if [ -e "${NGINX_HOME}/webapps/${folder}/WEB-INF/service_routing.xml" ]; then \
+           rm -f "${NGINX_HOME}/webapps/${folder}/WEB-INF/service_routing.xml"; \
+         fi; \
+# 清除tomcat的lib已经存在的jar包
+         rm -f "${NGINX_HOME}/webapps/${folder}/WEB-INF/lib/"*.jar; \
+       done < "${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt" | sed 's/\r//g';) \
+# 删除下载的包
+    && rm -rf "${IBCP_PACKAGE_DOWNLOAD}" \
+    && chmod -R 777 ${NGINX_HOME}/webapps
+
+
+# 拷贝自nginx的Dockerfile,还没搞明白啥意思呢
+CMD ["nginx", "-g", "daemon off;"]

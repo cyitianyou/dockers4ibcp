@@ -1,0 +1,10 @@
+.git
+.vs
+.gitignore
+tmp
+temp
+LICENSE
+README.md
+encourager.gif
+build_dockerfile4all.sh
+deploy_ibcp_all.sh

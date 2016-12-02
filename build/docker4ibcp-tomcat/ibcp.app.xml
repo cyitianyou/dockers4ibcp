@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE configuration>
+<ns2:configuration xmlns:ns2="http://colorcoding.org/ibas/bobas/configuration">
+  <appSettings>
+    <!-- 配置项目-公司标记 -->
+    <add key="CompanyId" value="AVA" />
+    <!-- 配置项目-数据库类型 -->
+    <add key="MasterDbType" value="MYSQL" />
+    <!-- 配置项目-数据库地址 -->
+    <add key="MasterDbServer" value="ibcp-srv-db" />
+    <!-- 配置项目-数据库名称 -->
+    <add key="MasterDbName" value="ibcp_demo" />
+    <!-- 配置项目-数据库用户名称 -->
+    <add key="MasterDbUserID" value="root" />
+    <!-- 配置项目-数据库用户密码 -->
+    <add key="MasterDbUserPassword" value="1q2w3e" />
+    <!-- 配置项目-审批方法 -->
+    <add key="ApprovalWay" value="ibcp" />
+    <!-- 配置项目-组织方式 -->
+    <add key="OrganizationWay" value="ibcp" />
+    <!-- 配置项目-权限判断方式 -->
+    <add key="OwnershipWay" value="ibcp" />
+    <!-- 配置项目-日志输出级别 -->
+    <add key="MsgLevel" value="INFO" />
+  </appSettings>
+</ns2:configuration>

@@ -1,0 +1,107 @@
+# ibcp全模块镜像
+# 基于tomcat镜像的ibcp镜像
+# OS：debian:jessie
+FROM tomcat:8.5-jre8
+
+# 作者
+MAINTAINER Niuren.Zhu "niuren.zhu@icloud.com"
+
+# 定义参数 
+# 程序包-发布服务地址
+ARG IBCP_PACKAGE_URL=http://ibas.club:8866/ibcp
+# 程序包-发布服务用户名
+ARG IBCP_PACKAGE_USER=avatech/\amber
+# 程序包-发布服务用户密码
+ARG IBCP_PACKAGE_PASSWORD=Aa123456
+# 程序包-版本路径
+ARG IBCP_PACKAGE_VERSION=latest
+# 程序包-下载目录
+ARG IBCP_PACKAGE_DOWNLOAD=./ibcp_packages
+# 程序包-工具目录
+ARG IBCP_PACKAGE_TOOLS=./ibcp_tools
+
+# 定义环境变量
+ENV \
+# ibcp目录
+    IBCP_HOME=/srv/ibcp
+ENV \
+# ibcp配置目录
+    IBCP_CONF=${IBCP_HOME}/conf \
+# ibcp数据目录
+    IBCP_DATA=${IBCP_HOME}/data \
+# ibcp日志目录
+    IBCP_LOG=${IBCP_HOME}/log
+# 其他使用的环境变量
+# CATALINA_HOME，tomcat目录
+
+# 创建数据文件夹
+RUN mkdir -p "${IBCP_PACKAGE_DOWNLOAD}"; \
+    mkdir -p "${IBCP_PACKAGE_TOOLS}"; \
+    mkdir -p "${IBCP_CONF}"; \
+    mkdir -p "${IBCP_DATA}"; \
+    mkdir -p "${IBCP_LOG}"; \
+    mkdir -p "${CATALINA_HOME}/webapps";
+
+# 部署ibcp程序
+RUN set -x \
+# 下载ibcp的最新war包
+    && wget -r -np -nd -nv -P ${IBCP_PACKAGE_DOWNLOAD} --http-user=${IBCP_PACKAGE_USER} --http-password=${IBCP_PACKAGE_PASSWORD} ${IBCP_PACKAGE_URL}/${IBCP_PACKAGE_VERSION}/ \
+# 排序ibcp.deploy.order.txt，此文件为部署顺序说明。
+    && if [ ! -e "${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt" ]; then \
+          ls -l "${IBCP_PACKAGE_DOWNLOAD}/*.war" | awk '//{print $NF}' >>"${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt"; \
+       fi \
+# 释放war包
+    && (while read file; \
+       do \
+         file=${file%%.war*}.war; \
+         echo 释放"${IBCP_PACKAGE_DOWNLOAD}/${file}"; \
+# 修正war包的解压目录
+         folder=${file##*ibcp.}; \
+         folder=${folder%%.service*}; \
+# 记录释放的目录到ibcp.release.txt
+         if [ ! -e "${CATALINA_HOME}/webapps/ibcp.release.txt" ]; then :>"${CATALINA_HOME}/webapps/ibcp.release.txt"; fi; \
+         grep -q ${folder} "${DEPLOY_FOLDER}/webapps/ibcp.release.txt" || echo "${folder}" >>"${CATALINA_HOME}/webapps/ibcp.release.txt"; \
+# 解压war包到tomcat目录，WEB-INF*表示仅解压此目录
+#        unzip -o "${IBCP_PACKAGE_DOWNLOAD}/${file}" WEB-INF* -d "${CATALINA_HOME}/webapps/${folder}"; \
+         unzip -o "${IBCP_PACKAGE_DOWNLOAD}/${file}" -d "${CATALINA_HOME}/webapps/${folder}"; \
+# 删除配置文件，并映射到统一位置
+         if [ -e "${CATALINA_HOME}/webapps/${folder}/WEB-INF/app.xml" ]; then \
+           if [ ! -e "${IBCP_CONF}/app.xml" ]; then cp -f "${CATALINA_HOME}/webapps/${folder}/WEB-INF/app.xml" "${IBCP_CONF}/app.xml"; fi; \
+           rm -f "${CATALINA_HOME}/webapps/${folder}/WEB-INF/app.xml"; \
+           ln -s "${IBCP_CONF}/app.xml" "${CATALINA_HOME}/webapps/${folder}/WEB-INF/app.xml"; \
+         fi; \
+# 删除服务路由文件，并映射到统一位置
+         if [ -e "${CATALINA_HOME}/webapps/${folder}/WEB-INF/service_routing.xml" ]; then \
+           if [ ! -e "${IBCP_CONF}/service_routing.xml" ]; then cp -f "${CATALINA_HOME}/webapps/${folder}/WEB-INF/service_routing.xml" "${IBCP_CONF}/service_routing.xml"; fi; \
+           rm -f "${CATALINA_HOME}/webapps/${folder}/WEB-INF/service_routing.xml"; \
+           ln -s "${IBCP_CONF}/service_routing.xml" "${CATALINA_HOME}/webapps/${folder}/WEB-INF/service_routing.xml"; \
+         fi; \
+# 映射日志文件夹到统一位置
+         if [ -e "${CATALINA_HOME}/webapps/${folder}/WEB-INF/log" ]; then rm -rf "${CATALINA_HOME}/webapps/${folder}/WEB-INF/log"; fi; \
+         ln -s -d "${IBCP_LOG}" "${CATALINA_HOME}/webapps/${folder}/WEB-INF/"; \
+# 集中共享jar包
+         if [ -e "${CATALINA_HOME}/lib/" ]; then \
+# 复制模块jar包到tomcat的lib目录
+           cp -n "${CATALINA_HOME}/webapps/${folder}/WEB-INF/lib/"*.jar "${CATALINA_HOME}/lib/"; \
+# 清除tomcat的lib已经存在的jar包
+           rm -f "${CATALINA_HOME}/webapps/${folder}/WEB-INF/lib/"*.jar; \
+         fi; \
+       done < "${IBCP_PACKAGE_DOWNLOAD}/ibcp.deploy.order.txt" | sed 's/\r//g';) \
+# 删除下载的包
+    && rm -rf "${IBCP_PACKAGE_DOWNLOAD}"
+
+# 拷贝配置文件
+COPY "ibcp.app.xml" "${IBCP_CONF}/app.xml"
+COPY "ibcp.service_routing.xml" "${IBCP_CONF}/service_routing.xml"
+# 拷贝工具文件
+COPY "initialize_datastructures.sh" "${IBCP_PACKAGE_TOOLS}/"
+ADD "btulz.transforms.tar" "${IBCP_PACKAGE_TOOLS}/"
+# 修改脚本权限
+RUN chmod 775 "${IBCP_PACKAGE_TOOLS}/initialize_datastructures.sh"
+
+# 映射ibcp数据目录
+VOLUME ["${IBCP_HOME}"]
+
+# 运行tomcat
+WORKDIR "${CATALINA_HOME}"
+# CMD ["catalina.sh", "run"]

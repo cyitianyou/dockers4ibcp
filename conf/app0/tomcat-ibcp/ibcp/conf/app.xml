@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE configuration>
+<ns2:configuration xmlns:ns2="http://colorcoding.org/ibas/bobas/configuration">
+    <appSettings>
+        <!--配置项目-公司标记-->
+        <add key="CompanyId" value="AVA" />
+        <!--配置项目-是否开启调试模式-->
+        <add key="DebugMode" value="false" />
+        <!-- 配置项目-数据库类型 -->
+        <add key="MasterDbType" value="MYSQL" />
+        <!-- 配置项目-数据库地址-->
+        <add key="MasterDbServer" value="master" />
+        <!-- 配置项目-数据库名称 -->
+        <add key="MasterDbName" value="omni_channel_test" />
+        <!-- 配置项目-数据库用户名称 -->
+        <add key="MasterDbUserID" value="root" />
+        <!-- 配置项目-数据库用户密码 -->
+        <add key="MasterDbUserPassword" value="1q2w3e" />
+	<add key="EnabledReadonlyRepository" value="true" />
+	<add key="ReadonlyDbType" value="MYSQL" />
+	<add key="ReadonlyDbServer" value="slave" />
+	<add key="ReadonlyDbName" value="omni_channel_test" />
+	<add key="ReadonlyDbUserID" value="root" />
+	<add key="ReadonlyDbUserPassword" value="1q2w3e" />
+        <!-- 配置项目-审批方法 -->
+	<add key="ApprovalWay" value="ibcp" />
+	<!-- 配置项目-组织方式 -->
+	<add key="OrganizationWay" value="ibcp" />
+	<!-- 配置项目-权限判断方式 -->
+	<add key="OwnershipWay" value="ibcp" />
+	<!-- 配置项目-组织结构缓存刷新时间 -->
+	<add key="OrgRefreshTime" value="0" />
+	<!-- 配置项目-禁用缓存 -->
+	<add key="DisabledCache" value="true" />	
+	<add key="MsgLevel" value="INFO" />
+    </appSettings>
+</ns2:configuration>

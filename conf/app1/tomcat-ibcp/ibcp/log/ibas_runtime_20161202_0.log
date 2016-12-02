@@ -1,0 +1,1176 @@
+[INFO] [2016-12-02 01:00:26.603]
+daemon: register task id [9167945741317998718], name [write message to file.].
+[INFO] [2016-12-02 01:00:26.592]
+config: read file's data [/usr/local/tomcat/webapps/systemcenter/WEB-INF/app.xml].
+[INFO] [2016-12-02 01:00:26.625]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.bobs.properties].
+[INFO] [2016-12-02 01:00:26.629]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.controls.properties].
+[INFO] [2016-12-02 01:00:26.635]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.sys.properties].
+[INFO] [2016-12-02 01:00:26.638]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.bobs_en-US.properties].
+[INFO] [2016-12-02 01:00:26.640]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.controls_en-US.properties].
+[INFO] [2016-12-02 01:00:26.662]
+i18n: read file's data [/usr/local/tomcat/webapps/systemcenter/resources/i18n/locale.sys_en-US.properties].
+[INFO] [2016-12-02 01:00:26.696]
+ap manager: created approval process manager [org.colorcoding.ibas.bobas.organization.ibcp.OrganizationManager].
+[INFO] [2016-12-02 01:00:26.711]
+repository: changed user [{User !system/-9}].
+[INFO] [2016-12-02 01:00:26.719]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:00:26.725]
+db adapter: created db adapter [org.colorcoding.ibas.bobas.db.mysql.DbAdapter].
+[INFO] [2016-12-02 01:00:26.725]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:26.729]
+daemon: register task id [4795681474382691364], name [idle db connection dispose.].
+[INFO] [2016-12-02 01:00:27.358]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:00:27.375]
+daemon: register task id [6743272665526310344], name [ownership refresh.].
+[INFO] [2016-12-02 01:00:27.375]
+judger: created ownership judger [org.colorcoding.ibas.bobas.ownership.ibcp.OwnershipJudger].
+[INFO] [2016-12-02 01:00:27.375]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:00:27.377]
+organization: read data in the database.
+[INFO] [2016-12-02 01:00:27.452]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:00:27.453]
+daemon: register task id [8399761859613707287], name [organizations refresh.].
+[INFO] [2016-12-02 01:00:27.454]
+repository: changed user [{User !system/-9}].
+[INFO] [2016-12-02 01:00:27.454]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:00:27.454]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:27.502]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:00:27.502]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:00:27.511]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:27.515]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:00:29.545]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:00:29.545]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:00:29.548]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:29.555]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:00:29.604]
+connection: using {Master}, user [root] & server [master] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:29.616]
+connection: user [root] connected [master|omni_channel_test].
+[INFO] [2016-12-02 01:00:29.664]
+routing: load config [/usr/local/tomcat/webapps/systemcenter/WEB-INF/service_routing.xml].
+[INFO] [2016-12-02 01:00:29.669]
+routing: module [62a87fed-fa39-480a-987f-507b489077c2 - ApprovalProcess|ap].
+  data: [http://192.168.227.131/app1/approvalprocess].
+  view: [http://192.168.227.131/app1/approvalprocess].
+[INFO] [2016-12-02 01:00:29.670]
+routing: module [25e4c5e6-21d3-4701-8551-9d551746f845 - ReportAnalysis|ra].
+  data: [http://192.168.227.131/app1/reportanalysis].
+  view: [http://192.168.227.131/app1/reportanalysis].
+[INFO] [2016-12-02 01:00:29.670]
+routing: module [af1efd6f-3b86-4dc7-93de-15d780ac9f2e - BusinessDataOutput|do].
+  data: [http://192.168.227.131/app1/businessdataoutput].
+  view: [http://192.168.227.131/app1/businessdataoutput].
+[INFO] [2016-12-02 01:00:29.670]
+routing: module [b650d7d1-fea0-44d4-85f7-f81b7904294a - BusinessElements|be].
+  data: [http://192.168.227.131/app1/businesselements].
+  view: [http://192.168.227.131/app1/businesselements].
+[INFO] [2016-12-02 01:00:29.670]
+routing: module [d4330860-9dec-426a-8765-df3254e14d57 - BusinessPartner|bp].
+  data: [http://192.168.227.131/app1/businesspartner].
+  view: [http://192.168.227.131/app1/businesspartner].
+[INFO] [2016-12-02 01:00:29.671]
+routing: module [88d05da8-e328-4a40-99f5-ebf236561bc5 - MaterialsManagement|mm].
+  data: [http://192.168.227.131/app1/materialsmanagement].
+  view: [http://192.168.227.131/app1/materialsmanagement].
+[INFO] [2016-12-02 01:00:29.671]
+routing: module [e85079f5-15a8-4f74-bc0f-910c23c3d302 - MembersManagement|mb].
+  data: [http://192.168.227.131/app1/membersmanagement].
+  view: [http://192.168.227.131/app1/membersmanagement].
+[INFO] [2016-12-02 01:00:29.671]
+routing: module [b74b33fe-6819-4820-9db3-720ec2da0f71 - HumanResources|hr].
+  data: [http://192.168.227.131/app1/humanresources].
+  view: [http://192.168.227.131/app1/humanresources].
+[INFO] [2016-12-02 01:00:29.671]
+routing: module [abcf813f-f3f5-4d18-aef2-fbc6d998c92e - DistributorApplication|da].
+  data: [http://192.168.227.131/app1/distributorapplication].
+  view: [http://192.168.227.131/app1/distributorapplication].
+[INFO] [2016-12-02 01:00:29.671]
+routing: module [b70d9fd4-c60a-48b0-8325-e12eda851269 - PurchaseManagement|pm].
+  data: [http://192.168.227.131/app1/purchasemanagement].
+  view: [http://192.168.227.131/app1/purchasemanagement].
+[INFO] [2016-12-02 01:00:29.672]
+routing: module [9db22489-a1b2-4cc4-b988-3931bb4f8237 - SalesManagement|sm].
+  data: [http://192.168.227.131/app1/salesmanagement].
+  view: [http://192.168.227.131/app1/salesmanagement].
+[INFO] [2016-12-02 01:00:29.672]
+routing: module [e79f69a5-7261-4dc3-b274-8cf2f40e0b90 - ReceiptPayment|rp].
+  data: [http://192.168.227.131/app1/receiptpayment].
+  view: [http://192.168.227.131/app1/receiptpayment].
+[INFO] [2016-12-02 01:00:29.672]
+routing: module [0214b27a-2325-475e-ac53-08e1a71269a5 - MarketingManagement|mk].
+  data: [http://192.168.227.131/app1/marketingmanagement].
+  view: [http://192.168.227.131/app1/marketingmanagement].
+[INFO] [2016-12-02 01:00:29.672]
+routing: module [7aec1592-2505-472e-bbc5-a1095df626de - CustomerServiceCenter|cs].
+  data: [http://192.168.227.131/app1/customerservicecenter].
+  view: [http://192.168.227.131/app1/customerservicecenter].
+[INFO] [2016-12-02 01:00:31.911]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:00:31.912]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:00:31.912]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:31.939]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:00:33.535]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:00:33.535]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:00:33.551]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:00:33.573]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:01:02.324]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:01:02.325]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.bocriteria.BOCriteria] in readonly repository.
+[INFO] [2016-12-02 01:01:02.325]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:01:02.325]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:01:02.325]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.boinformation.BOInformation] in readonly repository.
+[INFO] [2016-12-02 01:01:02.326]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:01:02.337]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:01:02.341]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.bocriteria.BOCriteria] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:01:02.344]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:01:02.377]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.boinformation.BOInformation] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:01:27.813]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:01:27.817]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:01:27.852]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:01:27.855]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:01:27.856]
+organization: read data in the database.
+[INFO] [2016-12-02 01:01:27.863]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:02:28.074]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:02:28.076]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:02:28.091]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:02:28.101]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:02:28.102]
+organization: read data in the database.
+[INFO] [2016-12-02 01:02:28.111]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:03:28.365]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:03:28.365]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:03:28.376]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:03:28.397]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:03:28.398]
+organization: read data in the database.
+[INFO] [2016-12-02 01:03:28.403]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:03:28.919]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:03:28.920]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:03:28.932]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:03:28.936]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:03:28.937]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:03:28.937]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:03:28.938]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:03:28.940]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:03:30.405]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:03:30.406]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:03:30.415]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:03:30.416]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:03:30.416]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:03:30.416]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:03:30.420]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:04:28.687]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:04:28.688]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:04:28.713]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:04:28.718]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:04:28.720]
+organization: read data in the database.
+[INFO] [2016-12-02 01:04:28.731]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:05:28.957]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:05:28.958]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:05:28.978]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:05:28.983]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:05:28.983]
+organization: read data in the database.
+[INFO] [2016-12-02 01:05:28.995]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:06:28.950]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:06:28.951]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:06:28.968]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:06:28.972]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:06:28.972]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:06:28.972]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:06:28.973]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:06:28.979]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:06:29.203]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:06:29.206]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:06:29.257]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:06:29.264]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:06:29.265]
+organization: read data in the database.
+[INFO] [2016-12-02 01:06:29.268]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:06:30.375]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:06:30.378]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:06:30.387]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:06:30.388]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:06:30.388]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:06:30.388]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:06:30.390]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:07:29.420]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:07:29.421]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:07:29.431]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:07:29.435]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:07:29.435]
+organization: read data in the database.
+[INFO] [2016-12-02 01:07:29.442]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:08:29.695]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:08:29.697]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:08:29.719]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:08:29.721]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:08:29.722]
+organization: read data in the database.
+[INFO] [2016-12-02 01:08:29.728]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:09:28.906]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:09:28.908]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:09:28.918]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:09:28.922]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:09:28.922]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:09:28.922]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:09:28.923]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:09:28.925]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:09:29.993]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:09:29.995]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:09:30.009]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:09:30.016]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:09:30.017]
+organization: read data in the database.
+[INFO] [2016-12-02 01:09:30.023]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:09:30.392]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:09:30.393]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:09:30.402]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:09:30.403]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:09:30.403]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:09:30.403]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:09:30.407]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:10:30.303]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:10:30.304]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:10:30.323]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:10:30.325]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:10:30.325]
+organization: read data in the database.
+[INFO] [2016-12-02 01:10:30.332]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:11:30.573]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:11:30.575]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:11:30.592]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:11:30.597]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:11:30.598]
+organization: read data in the database.
+[INFO] [2016-12-02 01:11:30.618]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:12:28.890]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:12:28.891]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:12:28.905]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:12:28.910]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:12:28.911]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:12:28.911]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:12:28.911]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:12:28.922]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:12:30.359]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:12:30.360]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:12:30.382]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:12:30.386]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:12:30.386]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:12:30.386]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:12:30.387]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:12:30.391]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:12:30.889]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:12:30.889]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:12:30.905]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:12:30.905]
+organization: read data in the database.
+[INFO] [2016-12-02 01:12:30.990]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:13:31.189]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:13:31.190]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:13:31.196]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:13:31.199]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:13:31.200]
+organization: read data in the database.
+[INFO] [2016-12-02 01:13:31.202]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:14:31.484]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:14:31.484]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:14:31.490]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:14:31.491]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:14:31.492]
+organization: read data in the database.
+[INFO] [2016-12-02 01:14:31.495]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:15:28.882]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:15:28.882]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:15:28.924]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:15:28.926]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:15:28.926]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:15:28.926]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:15:28.926]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:15:28.927]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:15:30.360]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:15:30.360]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:15:30.363]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:15:30.364]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:15:30.365]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:15:30.365]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:15:30.365]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:15:30.365]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:15:31.758]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:15:31.758]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:15:31.759]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:15:31.760]
+organization: read data in the database.
+[INFO] [2016-12-02 01:15:31.763]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:16:32.050]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:16:32.051]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:16:32.062]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:16:32.064]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:16:32.065]
+organization: read data in the database.
+[INFO] [2016-12-02 01:16:32.072]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:17:32.364]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:17:32.364]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:17:32.369]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:17:32.370]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:17:32.370]
+organization: read data in the database.
+[INFO] [2016-12-02 01:17:32.377]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:18:28.880]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:18:28.880]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:18:28.887]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:18:28.890]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:18:28.891]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:18:28.891]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:18:28.891]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:18:28.899]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:18:30.354]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:18:30.358]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:18:30.390]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:18:30.391]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:18:30.391]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:18:30.392]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:18:30.392]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:18:30.395]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:18:32.691]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:18:32.691]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:18:32.692]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:18:32.693]
+organization: read data in the database.
+[INFO] [2016-12-02 01:18:32.696]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:19:33.011]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:19:33.012]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:19:33.015]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:19:33.016]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:19:33.016]
+organization: read data in the database.
+[INFO] [2016-12-02 01:19:33.071]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:20:33.337]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:20:33.337]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:20:33.345]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:20:33.346]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:20:33.346]
+organization: read data in the database.
+[INFO] [2016-12-02 01:20:33.350]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:21:28.896]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:21:28.897]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:21:28.901]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:21:28.903]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:21:28.903]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:21:28.903]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:21:28.903]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:21:28.904]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:21:30.361]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:21:30.361]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:21:30.370]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:21:30.374]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:21:30.375]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:21:30.375]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:21:30.375]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:21:30.375]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:21:33.665]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:21:33.666]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:21:33.670]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:21:33.670]
+organization: read data in the database.
+[INFO] [2016-12-02 01:21:33.677]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:22:34.012]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:22:34.012]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:22:34.017]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:22:34.019]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:22:34.020]
+organization: read data in the database.
+[INFO] [2016-12-02 01:22:34.025]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:23:34.353]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:23:34.353]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:23:34.356]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:23:34.359]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:23:34.359]
+organization: read data in the database.
+[INFO] [2016-12-02 01:23:34.363]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:24:28.881]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:24:28.881]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:24:28.891]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:24:28.894]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:24:28.894]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:24:28.894]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:24:28.894]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:24:28.895]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:24:30.351]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:24:30.352]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:24:30.365]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:24:30.376]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:24:30.376]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:24:30.376]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:24:30.377]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:24:30.378]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:24:34.695]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:24:34.695]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:24:34.697]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:24:34.697]
+organization: read data in the database.
+[INFO] [2016-12-02 01:24:34.702]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:25:35.004]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:25:35.005]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:25:35.030]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:25:35.040]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:25:35.040]
+organization: read data in the database.
+[INFO] [2016-12-02 01:25:35.052]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:26:35.262]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:26:35.264]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:26:35.279]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:26:35.281]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:26:35.282]
+organization: read data in the database.
+[INFO] [2016-12-02 01:26:35.285]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:27:28.917]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:27:28.918]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:27:28.926]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:27:28.929]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:27:28.929]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:27:28.929]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:27:28.930]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:27:28.931]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:27:30.368]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:27:30.373]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:27:30.391]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:27:30.393]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:27:30.393]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:27:30.393]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:27:30.393]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:27:30.395]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:27:35.589]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:27:35.590]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:27:35.596]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:27:35.598]
+organization: read data in the database.
+[INFO] [2016-12-02 01:27:35.611]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:28:35.874]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:28:35.874]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:28:35.899]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:28:35.907]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:28:35.907]
+organization: read data in the database.
+[INFO] [2016-12-02 01:28:35.914]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:29:36.185]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:29:36.187]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:29:36.205]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:29:36.210]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:29:36.210]
+organization: read data in the database.
+[INFO] [2016-12-02 01:29:36.216]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:30:28.889]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:30:28.890]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:30:28.896]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:30:28.899]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:30:28.899]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:30:28.899]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:30:28.899]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:30:28.900]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:30:30.350]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:30:30.350]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:30:30.364]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:30:30.368]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:30:30.368]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:30:30.368]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:30:30.368]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:30:30.369]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:30:36.482]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:30:36.483]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:30:36.490]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:30:36.491]
+organization: read data in the database.
+[INFO] [2016-12-02 01:30:36.509]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:31:36.753]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:31:36.754]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:31:36.775]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:31:36.778]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:31:36.779]
+organization: read data in the database.
+[INFO] [2016-12-02 01:31:36.783]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:32:36.992]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:32:36.993]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:32:37.007]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:32:37.009]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:32:37.010]
+organization: read data in the database.
+[INFO] [2016-12-02 01:32:37.014]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:33:28.911]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:33:28.914]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:33:28.927]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:33:28.930]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:33:28.930]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:33:28.930]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:33:28.931]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:33:28.933]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:33:30.350]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:33:30.350]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:33:30.362]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:33:30.365]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:33:30.365]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:33:30.365]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:33:30.365]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:33:30.374]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:33:37.241]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:33:37.242]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:33:37.257]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:33:37.257]
+organization: read data in the database.
+[INFO] [2016-12-02 01:33:37.336]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:34:37.427]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:34:37.428]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:34:37.455]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:34:37.462]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:34:37.463]
+organization: read data in the database.
+[INFO] [2016-12-02 01:34:37.470]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:35:37.656]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:35:37.656]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:35:37.671]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:35:37.672]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:35:37.672]
+organization: read data in the database.
+[INFO] [2016-12-02 01:35:37.676]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:36:28.899]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:36:28.899]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:36:28.917]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:36:28.921]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:36:28.921]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:36:28.921]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:36:28.921]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:36:28.922]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:36:30.349]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:36:30.349]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:36:30.354]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:36:30.355]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:36:30.355]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:36:30.355]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:36:30.355]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:36:30.362]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:36:37.867]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:36:37.870]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:36:37.879]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:36:37.880]
+organization: read data in the database.
+[INFO] [2016-12-02 01:36:37.888]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:37:38.121]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:37:38.123]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:37:38.155]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:37:38.158]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:37:38.159]
+organization: read data in the database.
+[INFO] [2016-12-02 01:37:38.163]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:38:38.299]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:38:38.300]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:38:38.326]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:38:38.331]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:38:38.331]
+organization: read data in the database.
+[INFO] [2016-12-02 01:38:38.341]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:39:29.481]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:39:29.483]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:39:29.492]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:39:29.495]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:39:29.495]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:39:29.496]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:39:29.496]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:39:29.506]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:39:30.440]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:39:30.440]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:39:30.444]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:39:30.452]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:39:30.453]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:39:30.453]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:39:30.454]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:39:30.466]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:39:38.475]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:39:38.477]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:39:38.485]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:39:38.485]
+organization: read data in the database.
+[INFO] [2016-12-02 01:39:38.496]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:40:38.715]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:40:38.718]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:40:38.733]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:40:38.738]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:40:38.738]
+organization: read data in the database.
+[INFO] [2016-12-02 01:40:38.750]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:41:38.939]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:41:38.941]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:41:38.954]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:41:38.959]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:41:38.960]
+organization: read data in the database.
+[INFO] [2016-12-02 01:41:38.971]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:42:29.471]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:42:29.472]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:42:29.491]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:42:29.504]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:42:29.505]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:42:29.505]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:42:29.505]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:42:29.511]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:42:30.454]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:42:30.455]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:42:30.469]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:42:30.477]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:42:30.477]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:42:30.477]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:42:30.478]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:42:30.482]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:42:39.218]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:42:39.219]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:42:39.235]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:42:39.236]
+organization: read data in the database.
+[INFO] [2016-12-02 01:42:39.240]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:43:39.439]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:43:39.442]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:43:39.454]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:43:39.456]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:43:39.456]
+organization: read data in the database.
+[INFO] [2016-12-02 01:43:39.469]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:44:39.682]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:44:39.683]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:44:39.703]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:44:39.707]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:44:39.708]
+organization: read data in the database.
+[INFO] [2016-12-02 01:44:39.715]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:45:29.464]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:45:29.465]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:45:29.515]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:45:29.519]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:45:29.519]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:45:29.519]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] in readonly repository.
+[INFO] [2016-12-02 01:45:29.519]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:45:29.523]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.systemmessage.SystemMessage] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:45:30.438]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.User] in readonly repository.
+[INFO] [2016-12-02 01:45:30.438]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:45:30.442]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:45:30.444]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.User] [1] times, result [1] filtering [0].
+[INFO] [2016-12-02 01:45:30.444]
+repository: changed user [{User admin/1}].
+[INFO] [2016-12-02 01:45:30.444]
+repository: fetching [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] in readonly repository.
+[INFO] [2016-12-02 01:45:30.444]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:45:30.454]
+repository: fetch [club.ibas.ibcp.approvalprocess.bo.approvalrequest.ApprovalRequest] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:45:39.938]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:45:39.939]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:45:39.957]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:45:39.958]
+organization: read data in the database.
+[INFO] [2016-12-02 01:45:39.962]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:46:40.219]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:46:40.220]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:46:40.233]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:46:40.238]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:46:40.238]
+organization: read data in the database.
+[INFO] [2016-12-02 01:46:40.246]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].
+[INFO] [2016-12-02 01:47:40.346]
+repository: fetching [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] in readonly repository.
+[INFO] [2016-12-02 01:47:40.346]
+connection: using {Readonly}, user [root] & server [slave] & db [omni_channel_test].
+[INFO] [2016-12-02 01:47:40.374]
+connection: user [root] connected [slave|omni_channel_test].
+[INFO] [2016-12-02 01:47:40.375]
+repository: fetch [club.ibas.ibcp.systemcenter.bo.organization.OrganizationalStructure] [1] times, result [0] filtering [0].
+[INFO] [2016-12-02 01:47:40.375]
+organization: read data in the database.
+[INFO] [2016-12-02 01:47:40.378]
+organization: cache data in file, [/usr/local/tomcat/temp/~org_cache_4fad7cea2b9c673f1fea18c0b50a8854.tmp].

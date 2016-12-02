@@ -1,0 +1,18 @@
+FROM docker.io/mysql:5.7
+
+MAINTAINER john.chen "john.chen@avatech.com.cn"
+
+# Add MySQL configuration
+COPY ./my.cnf /etc/mysql/conf.d/  
+COPY ./mysqld_charset.cnf /etc/mysql/conf.d/ 
+COPY ./initialization.sh /usr/local/bin/
+RUN ln -s usr/local/bin/initialization.sh /initialization.sh # backwards compat
+
+ENV REPLICATION_MASTER=**False** \
+    REPLICATION_SLAVE=**False** \
+    REPLICATION_USER=manager \
+    REPLICATION_PASS=avatech \
+    MASTER_ADDR=master \
+    MASTER_PORT=3306
+
+ENTRYPOINT ["initialization.sh"]
