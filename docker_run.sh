@@ -27,4 +27,8 @@ docker run --name=app1-nginx --link=app1-tomcat:tomcat -v `pwd`/conf/app1/nginx-
 #运行nginx-porxy
 echo 运行nginx-porxy
 docker run --name=nginx-porxy --link=app0-nginx --link=app1-nginx -p 80:80 -v `pwd`/conf/nginx-porxy/conf.d:/etc/nginx/conf.d -d avatech/nginx:1.11.6
-
+#创建数据结构
+echo 开始创建app0的数据结构
+docker exec -i app0-tomcat ./ibcp_tools/initialize_datastructures.sh
+echo 开始创建app1的数据结构
+docker exec -i app1-tomcat ./ibcp_tools/initialize_datastructures.sh
